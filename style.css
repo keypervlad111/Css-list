@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s ease-in-out;
+}
+html {
+    font-size: 62.5%;
+}
+li {
+    list-style: none;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    color: #606061;
+    background-color: #1e1e1e;
+}
+
+.section_item {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+.section_item::before{
+    content: '';
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #343844;
+    vertical-align: top;
+    margin-top: 1.3rem;
+    margin-right: 1rem;
+}
+
+.section_item:hover {
+    color: #fff;
+    text-shadow: 0px 4px 4px #fff;
+}
+
+.section_item:hover::before {
+    background-color:  #f333f3;
+    border-radius: 50%;
+}
